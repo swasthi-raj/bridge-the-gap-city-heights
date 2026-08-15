@@ -66,6 +66,13 @@
   .dash-grid .box h4{color:var(--navy); font-size:.98rem; margin-bottom:10px;}
   .dash-grid .box ul{padding-left:18px; font-size:.9rem; color:#444;}
   .dash-grid .box li{margin-bottom:6px;}
+  .video-section{background:#fff;}
+  .video-frame{position:relative; width:100%; max-width:760px; aspect-ratio:16/9; background:linear-gradient(135deg,var(--navy) 0%, var(--navy-dark) 100%); border-radius:12px; margin-top:20px; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  .video-frame iframe{position:absolute; top:0; left:0; width:100%; height:100%; border:0;}
+  .video-placeholder{text-align:center; color:#fff;}
+  .video-placeholder .play{width:64px; height:64px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 14px; font-size:1.4rem;}
+  .video-placeholder .ptxt{font-weight:700; font-size:1rem;}
+  .video-placeholder .stxt{font-size:.85rem; color:#cfd8db; margin-top:4px;}
   .model{background:var(--bg);}
   .model-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:10px;}
   .model-grid .box{background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px;}
@@ -102,6 +109,7 @@
       <a href="#gap">The Gap</a>
       <a href="#findings">Findings</a>
       <a href="#dashboard">Dashboard</a>
+      <a href="#video">Video</a>
       <a href="#model">Get Involved</a>
       <a href="#about">About</a>
     </nav>
@@ -222,6 +230,17 @@
   </div>
 </section>
 
+<section class="video-section" id="video">
+  <div class="container">
+    <div class="kicker">Watch</div>
+    <h2>Project video</h2>
+    <p class="intro">A short video walking through the same findings — the funding gap, the AP course comparison, and what the dashboard shows — for anyone who'd rather watch than read.</p>
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/8DLAHbjYHdA" title="Bridge the Gap: City Heights Youth Opportunity Initiative" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
 <section class="model" id="model">
   <div class="container">
     <div class="kicker">Next Steps</div>
@@ -259,6 +278,7 @@
       </div>
       <div class="doc-links">
         <a href="#" onclick="return false;">📄 Full Final Report (PDF, 35 pages)</a>
+        <a href="https://swasthi-raj.github.io/bridge-the-gap-city-heights/Bridge_the_Gap_Poster.pdf" target="_blank" rel="noopener">🖼️ Scientific Poster (PDF)</a>
         <a href="https://sdsugeo.maps.arcgis.com/apps/dashboards/8d996e26a442454e8ceccc40ed770314" target="_blank" rel="noopener">🗺️ Live ArcGIS Dashboard</a>
         <a href="https://forms.gle/KUfPgfxzCdGyvxm5A" target="_blank" rel="noopener">📋 Family Survey (bilingual)</a>
       </div>
